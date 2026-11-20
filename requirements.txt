@@ -1,0 +1,4 @@
+paddleocr
+onnxruntime
+langchain_openai
+datasets
