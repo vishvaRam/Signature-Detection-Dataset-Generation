@@ -20,8 +20,8 @@ from pydantic import BaseModel
 DATASET_NAME = "tech4humans/signature-detection"
 SPLITS_TO_PROCESS = ["train", "validation", "test"]  # Or None for all splits
 
-MAX_SAMPLES_TO_RUN: int | None = 1
-CONCURRENCY_LIMIT = 8
+MAX_SAMPLES_TO_RUN: int | None = 1000
+CONCURRENCY_LIMIT = 60
 ORI_BATCH_SIZE = 16
 ORI_CONFIDENCE_THRESHOLD = 0.45
 TARGET_MIN_DIM = 1600
@@ -33,9 +33,9 @@ MAX_OPEN_DISCOVERY = 1
 MAX_PURE_VQA = 2
 
 # vLLM OpenAI-Compatible Endpoint
-VLLM_BASE_URL = "http://192.9.200.28:7416/v1"
+VLLM_BASE_URL = "http://195.26.233.74:57995/v1"
 VLLM_API_KEY = "EMPTY"
-TEACHER_MODEL = "LLM"
+TEACHER_MODEL = "Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ"
 
 # Output Directories
 BASE_OUT_DIR = Path("teacher_annotations")
